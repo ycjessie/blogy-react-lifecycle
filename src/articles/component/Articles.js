@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Article from './Article'
 class Articles extends Component {
     render() { 
-        const allArticles=this.props.articles.map((articles,index)=>{
-            return <Article title={articles.title}
-                    author={articles.author}
-                    content={articles.content}
+        const allArticles=this.props.articles.map((article,index)=>{
+            return <Article title={article.title}
+                    author={article.author}
+                    content={article.content}
                     key={index}/>
         })
         return ( 

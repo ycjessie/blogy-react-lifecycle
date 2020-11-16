@@ -7,7 +7,7 @@ class Article extends Component {
             
             <div className="article">
                 {/* title,content & author */}
-                <h4>Title</h4>
+                <h3>Title</h3>
                 <sub>Author</sub>
                 <p>Content</p>
             </div>
