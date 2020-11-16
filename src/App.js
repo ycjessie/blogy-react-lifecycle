@@ -19,7 +19,7 @@ class App extends Component {
     return ( 
       <>
         <h1>Welcome to Blogy</h1>
-        <Articles />
+        <Articles articles={this.state.articles}/>
       </>
      );
   }
