@@ -11,7 +11,7 @@ class Articles extends Component {
         return ( 
             <>
                 <h3>All Articles</h3>
-                {allArticles}
+                {allArticles} 
             </>
          );
     }
