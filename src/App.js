@@ -14,11 +14,15 @@ class App extends Component {
       ],
     }
   }
-  
+  setArticles=(articles)=>{
+    this.setState({articles:articles});
+
+  }
   render() { 
     return ( 
       <>
         <h1>Welcome to Blogy</h1>
+        {/* <h3>{process.env.REACT_APP_BASE_URL}</h3> */}
         <Articles articles={this.state.articles}/>
       </>
      );
