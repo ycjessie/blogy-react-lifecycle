@@ -4,9 +4,9 @@ const Legal=()=>{
         <>
             <h3>Legal</h3>
             <ul>
-                <li>Toni Langley</li>
-                <li>Jordan Allain</li>
-                <li>Caleb Pearce</li>
+                <li>Atticus Finch</li>
+                <li>Saul Goodman</li>
+                 <li>Sam Seaborn</li>
             </ul>
         </>
     )

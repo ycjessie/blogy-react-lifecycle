@@ -9,7 +9,7 @@ const Team=({match})=>{
             <p>something something...</p>
             {match.url}
             <ul>
-                <li><Link to={match.url+ '/engineering'}>Enginnering</Link>
+                <li><Link to={match.url+ '/engineering'}>Engineering</Link>
                 </li>
                 <li><Link to={match.url+ '/legal'}>Legal</Link>
                 </li>
