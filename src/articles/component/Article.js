@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class Article extends Component {
  deleteArticle=(e)=>{
      e.preventDefault();
-     console.log('Article ID', this.props.id)
+     //console.log('Article ID', this.props.id)
+     this.props.deleteArticle(this.props.id)
  }   
     render() { 
         
