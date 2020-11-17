@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Article from './Article'
-import {getAllArticles} from '../api'
+import {getAllArticles,deleteArticleByID} from '../api'
 class Articles extends Component {
     
     componentDidMount(){
