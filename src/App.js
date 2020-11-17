@@ -26,7 +26,8 @@ class App extends Component {
   render() { 
     return ( 
       <>
-        <Nav />
+        {/* <Nav /> */}
+        <Route path='/' component={Nav} />
         {/* <Link to='/about'>About Us </Link>
         {'|'}
         <Link to='/team'>Team</Link> */}
