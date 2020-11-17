@@ -2,22 +2,23 @@ import React from 'react'
 import Engineering from './Engineering'
 import Legal from './Legal'
 import {Route,Link} from  'react-router-dom';
-const Team=()=>{
+const Team=({match})=>{
     return(
         <div>
             <h3>Our Teams</h3>
             <p>something something...</p>
+            {match.url}
             <ul>
-                <li><Link to={'/team/engineering'}>Enginnering</Link>
+                <li><Link to={match.url+ '/engineering'}>Enginnering</Link>
                 </li>
-                <li><Link to={'/team/legal'}>Legal</Link>
+                <li><Link to={match.url+ '/legal'}>Legal</Link>
                 </li>
             </ul>
             <hr/>
             {/* <Engineering />
             <Legal /> */}
-            <Route path={'/team/engineering'} component={Engineering} />
-            <Route path={'/team/legal'} component={Legal} />
+            <Route path={match.url+ '/engineering'} component={Engineering} />
+            <Route path={match.url+ '/legal'} component={Legal} />
         </div>
     )
 }
