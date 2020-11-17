@@ -13,6 +13,10 @@ class Articles extends Component {
                 console.log('check API error',error)
             });
     }
+    //Make an API call to delete an Article
+    deleteArticle=(id)=>{
+        console.log('the Article ID to delete by',id)
+    }
     render() { 
         let allArticles = <h4>No Articles!</h4>
         if(this.props.articles.length >0) {
