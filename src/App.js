@@ -4,6 +4,7 @@ import { Route ,Link} from 'react-router-dom';
 import Articles from './articles/component/Articles';
 import About from './pages/component/About'
 import Team from './pages/component/Team'
+import Nav from './shared/component/Nav'
 class App extends Component {
   constructor(props){
     super(props)
@@ -25,10 +26,13 @@ class App extends Component {
   render() { 
     return ( 
       <>
-        <Link to='/about'>About Us </Link>
+        <Nav />
+        {/* <Link to='/about'>About Us </Link>
         {'|'}
-        <Link to='/team'>Team</Link>
+        <Link to='/team'>Team</Link> */}
+
         <h1>Welcome to Blogy</h1>
+
         {/* <h3>{process.env.REACT_APP_BASE_URL}</h3> */}
         {/* <About /> */}
         <Route path='/about' component={About} />
