@@ -23,6 +23,7 @@ deleteArticle=(id)=>{
             const newArticlesList=this.props.articles.filter((article)=>{
                 return article.id !==id;
             })
+            this.props.setArticles(newArticlesList)
         })
         .catch((error)=>{
             console.log('api error')
