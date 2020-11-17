@@ -27,7 +27,8 @@ class App extends Component {
     return ( 
       <>
         {/* <Nav /> */}
-        <Route path='/' component={Nav} />
+        {/* use exact property on the route */}
+        <Route path='/' exact component={Nav} /> 
         {/* <Link to='/about'>About Us </Link>
         {'|'}
         <Link to='/team'>Team</Link> */}
