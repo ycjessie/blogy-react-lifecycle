@@ -23,7 +23,8 @@ class App extends Component {
       <>
         <h1>Welcome to Blogy</h1>
         {/* <h3>{process.env.REACT_APP_BASE_URL}</h3> */}
-        <Articles articles={this.state.articles}/>
+        <Articles articles={this.state.articles}
+        setArticles={this.setArticles}/>
       </>
      );
   }
