@@ -28,12 +28,12 @@ class App extends Component {
       <>
         {/* <Nav /> */}
         {/* use exact property on the route */}
-        <Route path='/' exact component={Nav} /> 
+        <Route path='/' component={Nav} /> 
         {/* <Link to='/about'>About Us </Link>
         {'|'}
         <Link to='/team'>Team</Link> */}
 
-        <h1>Welcome to Blogy</h1>
+       <Route path='/' exact render={() =><h1>Welcome to Blogy</h1>} />
 
         {/* <h3>{process.env.REACT_APP_BASE_URL}</h3> */}
         {/* <About /> */}
