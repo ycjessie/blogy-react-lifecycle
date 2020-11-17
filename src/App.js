@@ -3,6 +3,7 @@ import { Route ,Link} from 'react-router-dom';
 //Route to trigger Path; link to triggle URL
 import Articles from './articles/component/Articles';
 import About from './pages/component/About'
+import Team from './pages/component/Team'
 class App extends Component {
   constructor(props){
     super(props)
@@ -25,10 +26,12 @@ class App extends Component {
     return ( 
       <>
         <Link to='/about'>About Us </Link>
+        <Link to='/team'>Team</Link>
         <h1>Welcome to Blogy</h1>
         {/* <h3>{process.env.REACT_APP_BASE_URL}</h3> */}
         {/* <About /> */}
         <Route path='/about' component={About} />
+        <Route path='/team' component={Team} />
         <Articles articles={this.state.articles}
         setArticles={this.setArticles}/>
       </>
