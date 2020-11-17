@@ -24,6 +24,7 @@ class App extends Component {
   render() { 
     return ( 
       <>
+        <Link to='/about'>About Us </Link>
         <h1>Welcome to Blogy</h1>
         {/* <h3>{process.env.REACT_APP_BASE_URL}</h3> */}
         {/* <About /> */}
