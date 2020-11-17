@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route ,Link} from 'react-router-dom';
+//Route to trigger Path; link to triggle URL
 import Articles from './articles/component/Articles';
 import About from './pages/component/About'
 class App extends Component {
