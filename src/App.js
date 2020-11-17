@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Articles from './articles/component/Articles';
+import About from './pages/component/About'
 class App extends Component {
   constructor(props){
     super(props)
@@ -23,6 +24,7 @@ class App extends Component {
       <>
         <h1>Welcome to Blogy</h1>
         {/* <h3>{process.env.REACT_APP_BASE_URL}</h3> */}
+        <About />
         <Articles articles={this.state.articles}
         setArticles={this.setArticles}/>
       </>
