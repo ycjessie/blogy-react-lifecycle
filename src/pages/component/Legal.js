@@ -1,5 +1,5 @@
 import React from 'react'
-const Team=()=>{
+const Legal=()=>{
     return(
         <>
             <h3>Legal</h3>
@@ -11,4 +11,4 @@ const Team=()=>{
         </>
     )
 }
-export default Team;
+export default Legal;
