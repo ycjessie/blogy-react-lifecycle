@@ -17,6 +17,13 @@ class Articles extends Component {
 //Make an API call to delete an Article
 deleteArticle=(id)=>{
     console.log('the Article ID to delete by',id)
+    deleteArticleByID(id)
+        .then((res)=>{
+            console.log(`the article with the ID ${id} is deleted` )
+        })
+        .catch((error)=>{
+            console.log('api error')
+        });
 }  
     render() { 
         let allArticles = <h4>No Articles!</h4>
