@@ -39,8 +39,13 @@ class App extends Component {
         {/* <About /> */}
         <Route path='/about' component={About} />
         <Route path='/team' component={Team} />
-        <Articles articles={this.state.articles}
-        setArticles={this.setArticles}/>
+        <Route path='/articles' exact render={(props) =>{
+          return <Articles {...props}
+              articles={this.state.articles}
+              setArticles={this.setArticles}/>
+          }} />
+        {/* <Articles articles={this.state.articles}
+        setArticles={this.setArticles}/> */}
       </>
      );
   }
